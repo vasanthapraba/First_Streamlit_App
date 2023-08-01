@@ -1,3 +1,3 @@
 import streamlit
 
-streamlite.title("Welcome to the App")
+streamlit.title("Welcome to the App")
