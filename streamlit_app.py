@@ -8,7 +8,8 @@ streamlit.title('My Parents New Healthy Dinner')
 def get_fruityvice_data(this_fruit_choice):
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
     normalized_json = pandas.json_normalize(fruityvice_response.json())
-    returns normalized_json
+    return normalized_json
+    
 streamlit.header('🥣Breakfast Menu')
 streamlit.text('🥗Omega 3 & Blueberry Oatmeal')
 streamlit.text('🐔Kale, Spinach & Rocket Smoothie')
