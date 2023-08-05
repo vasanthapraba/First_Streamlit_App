@@ -22,7 +22,9 @@ fruit_toshow = myfruitlist.loc[fruit_selected]
 #display in page
 streamlit.dataframe(fruit_toshow)
 
+#New section to show the fruityvice fruites list
+streamlit.header("Fruityvice Fruit Advice!")
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response)
+streamlit.text(fruityvice_response.json())
 
